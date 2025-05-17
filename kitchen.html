@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 Card Layout</title>
+    <style>
+        /* Basic reset for margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E2DAD6; /* Updated background color */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 7em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px; /* Space between cards */
+            max-width: 1200px; /* Maximum width for container */
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            width: calc(25% - 20px); /* 4 cards in a row */
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-body h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .card-body p {
+            font-size: 1em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Heading -->
+    <h1>Kitchen</h1>
+
+    <!-- Card Container -->
+    <div class="card-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="kit1.jpeg" alt="Card 1">
+            <div class="card-body">
+                <h3>Card 1</h3>
+                <p>This is a description for the first card.</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="kit2.jpeg" alt="Card 2">
+            <div class="card-body">
+                <h3>Card 2</h3>
+                <p>This is a description for the second card.</p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="kit3.jpeg" alt="Card 3">
+            <div class="card-body">
+                <h3>Card 3</h3>
+                <p>This is a description for the third card.</p>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="kit4.jpeg" alt="Card 4">
+            <div class="card-body">
+                <h3>Card 4</h3>
+                <p>This is a description for the fourth card.</p>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+            <img src="kit5.jpeg" alt="Card 5">
+            <div class="card-body">
+                <h3>Card 5</h3>
+                <p>This is a description for the fifth card.</p>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+            <img src="kit6.jpg" alt="Card 6">
+            <div class="card-body">
+                <h3>Card 6</h3>
+                <p>This is a description for the sixth card.</p>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card">
+            <img src="kit7.jpg" alt="Card 7">
+            <div class="card-body">
+                <h3>Card 7</h3>
+                <p>This is a description for the seventh card.</p>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card">
+            <img src="kit8.webp" alt="Card 8">
+            <div class="card-body">
+                <h3>Card 8</h3>
+                <p>This is a description for the eighth card.</p>
+            </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="card">
+            <img src="kit9.jpg" alt="Card 9">
+            <div class="card-body">
+                <h3>Card 9</h3>
+                <p>This is a description for the ninth card.</p>
+            </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="card">
+            <img src="kit10.png" alt="Card 10">
+            <div class="card-body">
+                <h3>Card 10</h3>
+                <p>This is a description for the tenth card.</p>
+            </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="card">
+            <img src="kit11.jpg" alt="Card 11">
+            <div class="card-body">
+                <h3>Card 11</h3>
+                <p>This is a description for the eleventh card.</p>
+            </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="card">
+            <img src="kit12.jpg" alt="Card 12">
+            <div class="card-body">
+                <h3>Card 12</h3>
+                <p>This is a description for the twelfth card.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
